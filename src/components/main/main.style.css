@@ -7,8 +7,7 @@
   background-size: cover;
   position: relative;
   z-index: 0;
-  background: rgb(177,153,177);
-  background: linear-gradient(90deg, rgba(177,153,177,1) 0%, rgba(221,212,212,1) 50%, rgba(179,155,155,1) 100%);
+  background-color: #e5e7eb;
   justify-content: center;
   width: 100%;
   text-align: center;

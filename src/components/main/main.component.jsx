@@ -21,7 +21,7 @@ const Main = () => {
           <p>A MAIS DE 5 ANOS NO MERCADO</p>
         </AnimatedText>
         <AnimatedText delay={600}>
-          <h1>CONHEÇA MAIS SOBRE NÓS E O SERVIÇO QUE REALIZAMOS</h1>
+          <h1>OS MELHORES ESTÃO AQUI</h1>
         </AnimatedText>
       </div>
     </div>

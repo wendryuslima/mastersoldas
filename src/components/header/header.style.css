@@ -1,26 +1,89 @@
-.header-container{
-    background-color: white;
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+.header-container {
+  background-color: #000;
+  box-shadow: 0 0 20px 3px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.1);
+}
+.header-items {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  right: 0;
+  margin: 0 15px;
+  padding: 10px 0;
+  cursor: pointer;
+  color: white; /* Ajuste a cor do texto conforme necessário */
+
+  &:hover {
+    color: white; /* Cor quando o mouse passa por cima */
+  }
+
+  &.active {
+    font-weight: bold; /* Estilo para o link ativo */
+    color: white; /* Cor do link ativo */
+  }
 }
 
-.header-title h2{
-    color: #000;
-    cursor: pointer;
+.header-title img {
+  max-width: 150px;
+  height: auto;
 }
 
-.header-item{
-    display: flex;
-    flex-direction: row;
-    
+.header-item {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
 
-.header-items{
-    margin-right: 30px;
-    color: #000;
-    font-size: 1.2rem;
-    cursor: pointer;
+.header-items {
+  position: relative;
+  right: 0;
+  margin: 0 15px;
+  padding: 10px 0;
+  cursor: pointer;
+  color: white; /* Ajuste a cor do texto conforme necessário */
+}
+
+.header-items::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: orange;
+  transition: width 0.3s;
+}
+
+.header-items:hover::after {
+  width: 100%;
+}
+
+.icon {
+  color: green;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 10px;
+  z-index: 5;
+  margin-right: 20px;
+}
+
+.icon a {
+  color: green;
+}
+
+.menu {
+  color: #fff;
+  cursor: pointer;
 }

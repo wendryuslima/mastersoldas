@@ -8,6 +8,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   background-color: #111;
   gap: 10px;
+
 `;
 
 export const AboutTitle = styled.h1`
@@ -16,6 +17,7 @@ export const AboutTitle = styled.h1`
   color: #f1450c;
   margin-top: 50px;
   text-transform: uppercase;
+  box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.1);
 `;
 
 export const AboutContent = styled.p`
@@ -27,20 +29,23 @@ export const AboutContent = styled.p`
   font-size: 1.1rem;
   padding: 30px;
   max-width: 700px;
+  
 `;
 
 export const AboutClientsConteiner = styled.div`
   display: flex;
+  margin: auto;
   align-items: center;
   margin: auto;
   flex-direction: column;
   margin-top: 20px;
   font-size: 3rem;
+  justify-content: center;
+  transition: 1s;
 
-  > svg {
-    align-items: center;
-    padding: 50px;
-  }
+&& :hover{
+  transform: scale(1.2);
+}
 `;
 
 export const AboutClientsContent = styled.p`
@@ -58,4 +63,12 @@ export const AboutClientsContent = styled.p`
   margin-top: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
+
+  
+
+  > svg {
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
 `;

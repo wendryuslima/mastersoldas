@@ -20,7 +20,7 @@ const AnimatedText = ({ children, delay }) => {
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="sobre-nos">
       <AnimatedText>
         <AboutTitle delay={200}>Sobre nós</AboutTitle>
       </AnimatedText>
@@ -49,8 +49,7 @@ const About = () => {
         </AboutClientsContent>
 
         <AboutClientsContent>
-          <IoIosAddCircle />
-           5 anos de experiência
+          <IoIosAddCircle />5 anos de experiência
         </AboutClientsContent>
       </AboutClientsConteiner>
     </AboutContainer>

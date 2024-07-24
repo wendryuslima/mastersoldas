@@ -1,18 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-html,body{
+html,
+body {
   height: 100%;
-  background-color:  rgb(242, 242, 242);
-   
-
 }
 
-#root{
+#root {
   display: flex;
   flex-direction: column;
   height: 100%;
