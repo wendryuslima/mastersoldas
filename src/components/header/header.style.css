@@ -1,7 +1,7 @@
 .header-container {
   background-color: #000;
   box-shadow: 0 0 20px 3px;
-  padding: 8px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,8 +13,6 @@
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-  position: relative;
-  right: 0;
   margin: 0 15px;
   padding: 10px 0;
   cursor: pointer;
@@ -37,15 +35,13 @@
 
 .header-item {
   display: flex;
-  position: absolute;
-  right: 0;
   margin-right: 20px;
 }
 
 .header-items {
+  margin: 0 15px;
   position: relative;
   right: 0;
-  margin: 0 15px;
   padding: 10px 0;
   cursor: pointer;
   color: white; /* Ajuste a cor do texto conforme necessário */
@@ -86,4 +82,19 @@
 .menu {
   color: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .header-items {
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
 }
